@@ -30,22 +30,28 @@ export type ContactField =
 export const contactInfo = [
     {
         src: "/icons/phone.svg",
+        alt: "Phone",
         label: "+966 000 115666",
+        href: "tel:+966000115666",
     },
     {
         src: "/icons/mail.svg",
+        alt: "Email",
         label: "info@beyondcode.ae",
+        href: "mailto:info@beyondcode.ae",
     },
     {
         src: "/icons/location.svg",
+        alt: "Location",
         label: "Abu Dhabi, UAE",
+        href: "https://maps.google.com/?q=Abu+Dhabi,UAE",
     },
 ];
 
 export const contactSocialLinks = [
-    { href: "/", src: "/icons/instagram.svg" },
-    { href: "/", src: "/icons/facebook.svg" },
-    { href: "/", src: "/icons/tiktok.svg" },
+    { href: "/", src: "/icons/instagram.svg", alt: "Instagram" },
+    { href: "/", src: "/icons/facebook.svg", alt: "Facebook" },
+    { href: "/", src: "/icons/tiktok.svg", alt: "TikTok" },
 ];
 
 export const contactSectionData = {
