@@ -71,12 +71,14 @@ export default function Header() {
                         {/* desktop navigation */}
                         <nav className="hidden md:block">
                             <ul className="flex items-center gap-2.5 xl:gap-4">
-                                {navItems.map((item) => (
+                                {navItems.map((item, i) => (
                                     <li
-                                        key={item.href}
+                                        key={i}
                                         className={`font-semibold text-xs xl:text-sm 2xl:text-base leading-6 tracking-normal ${pathname === item.href ? "text-accent-pink" : ""} hover:text-accent-pink/90 transition-colors duration-500`}
                                     >
-                                        <a href={item.href}>{item.label}</a>
+                                        <Link href={item.href}>
+                                            {item.label}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -111,12 +113,14 @@ export default function Header() {
                             className={`lg:hidden w-full min-h-[60vh] flex flex-col items-start justify-center gap-8 bg-nav-bg backdrop-blur-lg shadow-[inset_3px_3px_0px_-3px_rgba(0,0,0,0.5),inset_-2px_-2px_1px_-2px_rgba(179,179,179,1)] rounded-lg mt-2 py-4 px-6 z-999 absolute top-0 -left-[120%] ${isMenuOpen ? "left-0" : ""} transition-all duration-500 ${pathname === "/" ? "bg-nav-bg/30" : "bg-nav-bg/70"}`}
                         >
                             <ul className="flex flex-col items-start gap-5">
-                                {navItems.map((item) => (
+                                {navItems.map((item, i) => (
                                     <li
-                                        key={item.href}
+                                        key={i}
                                         className={`font-semibold text-lg leading-none tracking-normal`}
                                     >
-                                        <a href={item.href}>{item.label}</a>
+                                        <Link href={item.href}>
+                                            {item.label}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

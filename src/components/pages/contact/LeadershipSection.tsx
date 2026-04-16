@@ -10,10 +10,10 @@ export default function LeadershipSection() {
 
     return (
         <section className="xl:pt-[110px]">
-            <Container className="relative border">
+            <Container className="relative">
                 {/* blobs */}
-                <div className="w-[418px] aspect-square bg-accent-green/30 blur-[100px] rounded-full absolute -bottom-1/3 xl:left-26 -z-10 pointer-events-none" />
-                <div className="w-[418px] aspect-square bg-accent-light-blue/40 blur-[100px] rounded-full absolute -bottom-2/4 -left-10 -z-10 pointer-events-none" />
+                <div className="w-[300px] md:w-[418px] aspect-square bg-accent-green/30 blur-[100px] rounded-full absolute -bottom-1/3 xl:left-26 -z-10 pointer-events-none" />
+                <div className="w-[300px] md:w-[418px] aspect-square bg-accent-light-blue/40 blur-[100px] rounded-full absolute -bottom-2/4 -left-10 -z-10 pointer-events-none" />
 
                 {/* main content */}
                 <div className="flex flex-col lg:flex-row justify-between lg:px-10">
