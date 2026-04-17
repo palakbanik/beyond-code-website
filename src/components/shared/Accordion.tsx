@@ -12,7 +12,6 @@ export default function Accordion({ data }: DataProps) {
 
     const handleBgAccording = (index: number) =>
         setBgAccording((prevIndex) => (prevIndex === index ? null : index));
-    console.log(data);
 
     return (
         <div className="mx-auto max-w-[760px] space-y-4">
@@ -22,7 +21,7 @@ export default function Accordion({ data }: DataProps) {
                     className="rounded-xl md:rounded-2xl overflow-hidden bg-foreground/2"
                 >
                     <div
-                        className="flex items-center justify-between gap-6 cursor-pointer w-full p-5 sm:p-6 transition-colors"
+                        className="flex items-center justify-between gap-6 cursor-pointer w-full p-5 sm:p-6 transition-colors min-h-[76px]"
                         onClick={() => handleBgAccording(i)}
                     >
                         <h2 className="text-foreground text-start font-semibold text-[15px] sm:text-base leading-snug select-none">
@@ -60,7 +59,7 @@ export default function Accordion({ data }: DataProps) {
                             <div
                                 className={`${bgAccording === i ? "px-5 sm:px-6 pb-5" : "px-5 sm:px-6 pb-0"}`}
                             >
-                                <div className="text-muted-foreground-primary text-sm leading-normal md:leading-6 text-start">
+                                <div className="text-muted-foreground-primary text-xs md:text-sm leading-normal md:leading-6 text-start">
                                     {item.answer}
                                 </div>
                             </div>

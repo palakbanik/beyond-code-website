@@ -61,9 +61,7 @@
     --font-mono: var(--font-inter);
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
     background: var(--background);
