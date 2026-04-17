@@ -25,7 +25,7 @@ export default function Accordion({ data }: DataProps) {
                         className="flex items-center justify-between gap-6 cursor-pointer w-full p-5 sm:p-6 transition-colors"
                         onClick={() => handleBgAccording(i)}
                     >
-                        <h2 className="text-foreground font-semibold text-[15px] sm:text-base leading-snug select-none">
+                        <h2 className="text-foreground text-start font-semibold text-[15px] sm:text-base leading-snug select-none">
                             {item.question}
                         </h2>
 

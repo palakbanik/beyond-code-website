@@ -116,6 +116,7 @@ export default function Header() {
                                 {navItems.map((item, i) => (
                                     <li
                                         key={i}
+                                        onClick={() => setIsMenuOpen(false)}
                                         className={`font-semibold text-lg leading-none tracking-normal`}
                                     >
                                         <Link href={item.href}>
