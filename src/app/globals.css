@@ -5,7 +5,7 @@
     --custom-black: #000000;
     --background: #0a0a0f;
     --foreground: #ffffff;
-    --dark-pink: #35254a00;
+    --dark-pink: #35254a;
     --accent-pink: #ff09f4;
     --accent-aqua: #00dbde;
     --accent-green: #05e388;
@@ -60,8 +60,6 @@
     --font-sans: var(--font-open-sans);
     --font-mono: var(--font-inter);
 }
-
-
 
 body {
     background: var(--background);
