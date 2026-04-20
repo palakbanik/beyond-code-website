@@ -31,7 +31,7 @@ export default function Header() {
 
     return (
         <header className="w-full fixed top-0 left-0 z-999">
-            <Container className="max-w-360 border">
+            <Container className="max-w-360">
                 <div className="relative">
                     <div
                         className={`mt-4 md:mt-6 lg:mt-8 px-5 md:px-8 xl:px-10 py-2.5 md:py-3.5 lg:py-5 flex items-center justify-between rounded-full ${pathname === "/" ? "bg-nav-bg/30" : "bg-nav-bg/70"} backdrop-blur-xl shadow-[inset_3px_3px_0px_-3px_rgba(0,0,0,0.5),inset_-2px_-2px_1px_-2px_rgba(179,179,179,1)]`}
