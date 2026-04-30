@@ -29,7 +29,7 @@ const betyondData = [
 export default function Beyond() {
     return (
         <div>
-            <Container className="xl:mt-13.75">
+            <Container className="mt-6 md:mt-9 xl:mt-13.75">
                 <div className="bg-linear-to-b from-dark-pink/5 to-accent-dark-blue/60 rounded-[20px] px-[20px] py-[30px] lg:py-[50px] lg:px-[40px] xl:py-[76px] xl:px-[106px]">
                     <Heading className="text-center">Why Beyond Code</Heading>
 
