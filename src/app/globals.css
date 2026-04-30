@@ -70,17 +70,30 @@ body {
 
 @layer utilities {
     .gradient-border {
-        border: 2px solid transparent;
+        position: relative;
         border-radius: 30px;
-        overflow: hidden;
-        background:
-            linear-gradient(#0a0a0f, #0a0a0f) padding-box,
-            linear-gradient(
-                    to right,
-                    var(--color-gradient-purple-start),
-                    var(--color-accent-yellow)
-                )
-                border-box;
+    }
+
+    .gradient-border::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 30px;
+        padding: 2px;
+        background: linear-gradient(
+            to right,
+            var(--color-gradient-purple-start),
+            var(--color-accent-yellow)
+        );
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        -webkit-mask-composite: xor;
+        pointer-events: none;
     }
 
     @media (max-width: 768px) {
