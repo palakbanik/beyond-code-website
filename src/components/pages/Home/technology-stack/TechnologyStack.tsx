@@ -42,12 +42,12 @@ export default function TechnologyStack() {
             <Image
                 src={blogBg}
                 alt="blob bg"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none animate-pulse"
             />
             <Container className="py-6 md:py-9 xl:py-13.75 2xl:py-27.5">
                 <div className="grid place-items-center ">
                     {/* heading */}
-                    <div className="text-center grid place-items-center gap-5">
+                    <div className="text-center grid place-items-center gap-4 lg:gap-5">
                         <Heading className="2xl:text-[42px]">
                             Technology Stack
                         </Heading>

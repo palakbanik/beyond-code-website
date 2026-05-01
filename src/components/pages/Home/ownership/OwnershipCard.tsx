@@ -9,11 +9,11 @@ interface OwnershipCardProps {
 export default function OwnershipCard({ card }: OwnershipCardProps) {
     const { title, bullets } = card;
     return (
-        <div className="rounded-[10px] min-h-[264px] max-w-[522px] flex-1">
+        <div className="w-full rounded-[10px] min-h-[264px] max-w-[522px] flex-1">
             <div className="px-[42px] pt-[44px] pb-[55px] gradient-border">
                 <SubHeading>{title}</SubHeading>
 
-                <ul className="mt-[14px] space-y-[8px] pl-[18px] list-disc">
+                <ul className="mt-2.5 lg:mt-[14px] space-y-1 md:space-y-[8px] pl-[18px] list-disc">
                     {bullets.map((bullet, i) => (
                         <li key={i}>
                             <Paragraph>{bullet}</Paragraph>

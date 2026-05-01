@@ -12,10 +12,10 @@ export default function InstitutionalImpact() {
             aria-label="Institutional Impact"
         >
             <div className="relative h-full w-full overflow-hidden rounded-[10px]">
-                <div className="relative z-10 h-full w-full p-6 sm:p-8 xl:p-[42px] 2xl:px-[60px] 2xl:py-[72px] ">
-                    <div className="flex flex-col lg:flex-row items-center justify-between">
+                <div className="relative z-10 h-full w-full">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-10 p-6 sm:p-8 xl:p-[42px] 2xl:px-[60px] 2xl:py-[72px]">
                         {/* left content */}
-                        <div className="flex flex-col gap-[30px]">
+                        <div className="flex flex-col gap-[20px] lg:gap-[30px]">
                             <Heading className="2xl:text-[42px]">
                                 Institutional Impact
                             </Heading>
@@ -70,7 +70,7 @@ export default function InstitutionalImpact() {
                         </div>
 
                         {/* right image */}
-                        <div className="relative w-[640px] h-[420px] overflow-hidden bg-white/5">
+                        <div className="w-full max-w-[605px] h-full">
                             <Image
                                 src={institutionalImpact}
                                 alt="Presentation in classroom"

@@ -20,7 +20,7 @@ export default function ContactSection() {
     return (
         <div>
             <Container>
-                <div className="sm:px-6 lg:px-10">
+                <div className="sm:px-6 lg:px-10 rounded-xl lg:rounded-[30px]">
                     <div className="gradient-border">
                         <div className="bg-[#222222]/50 ">
                             <div className="flex flex-col lg:flex-row justify-between">

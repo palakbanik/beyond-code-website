@@ -27,13 +27,15 @@ export default function CtaGradientCard({ title, image, className }: Props) {
                     <Heading className="text-lg sm:text-[21px] md:text-[24px] lg:text-[28px] xl:text-[30px] 2xl:text-[36px] leading-normal md:leading-normal font-extrabold">
                         {title}
                     </Heading>
-                    <Button
-                        variant="black"
-                        iconVariant="white"
-                        icon={<FiArrowUpRight />}
-                    >
-                        Book for Consultation
-                    </Button>
+                    <Link href={"/"}>
+                        <Button
+                            variant="black"
+                            iconVariant="white"
+                            icon={<FiArrowUpRight />}
+                        >
+                            Book for Consultation
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Right image */}

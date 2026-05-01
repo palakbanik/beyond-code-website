@@ -21,7 +21,7 @@ export default function OurCoreSystems() {
             <Container className="py-10 md:py-15 lg:py-[80px] xl:py-[110px]">
                 <div>
                     {/* heading */}
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                         <Heading>Our Core Systems</Heading>
 
                         <Button icon={<PiHeadphonesBold />}>

@@ -39,13 +39,13 @@ export default function Ownership() {
             <Image
                 src={bgBlog}
                 alt="blob"
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none -z-10"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none -z-10 animate-pulse"
                 draggable={false}
             />
             <Container>
-                <div className="space-y-[50px] w-full flex flex-col items-center justify-center">
+                <div className="space-y-[25px] md:space-y-[50px] w-full flex flex-col items-center justify-center">
                     {/* heading */}
-                    <div className="w-full text-center grid place-items-center gap-5">
+                    <div className="w-full text-center grid place-items-center gap-4 sm:gap-5">
                         <Heading className="2xl:text-[42px]">
                             Security & Infrastructure Ownership
                         </Heading>
@@ -57,7 +57,7 @@ export default function Ownership() {
                     </div>
 
                     {/* list content */}
-                    <div className="w-full flex items-center justify-center gap-10">
+                    <div className="w-full flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
                         {ownershipCardData.map((card) => (
                             <OwnershipCard key={card.title} card={card} />
                         ))}

@@ -13,7 +13,8 @@ export default function Hero() {
             <Image
                 src={heroBG}
                 alt="Hero background"
-                className="object-cover pointer-events-none absolute top-0 left-0 w-full h-full -z-20"
+                priority
+                className="object-cover pointer-events-none absolute top-0 left-0 w-full h-full -z-20 select-none"
             />
             {/* background blob */}
             <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 w-256.5 h-162 bg-accent-pink/50 rounded-full blur-[200px] -z-10 pointer-events-none" />
