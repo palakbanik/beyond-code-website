@@ -27,7 +27,9 @@ export default function Home() {
             <Ownership />
             <Leadership />
             <CaseStudy />
-            <HeroFAQSection />
+            <div className="mb-[200px]">
+                <HeroFAQSection />
+            </div>
         </div>
     );
 }

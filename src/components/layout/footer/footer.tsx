@@ -52,7 +52,7 @@ export default function Footer() {
                                             {col.links.map((l) => (
                                                 <li
                                                     key={l.href}
-                                                    className="text-xs sm:text-sm text-muted-foreground-secondary hover:text-accent-aqua transition hover:translate-x-3"
+                                                    className="text-xs sm:text-sm text-muted-foreground-secondary hover:text-accent-aqua transition hover:translate-x-1.5"
                                                 >
                                                     <Link href={l.href}>
                                                         {l.label}

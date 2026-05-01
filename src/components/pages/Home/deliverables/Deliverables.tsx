@@ -39,8 +39,8 @@ const defaultItems: DeliverableItem[] = [
 export default function Deliverables() {
     return (
         <section aria-label="Deliverables section">
-            <Container className="pt-6 md:pt-9 xl:pt-13.75 2xl:pt-27.5">
-                <div className="grid lg:grid-cols-[605px_1fr] items-center gap-[77px]">
+            <Container className="py-10 md:pt-9 xl:pt-13.75 2xl:pt-27.5">
+                <div className="grid lg:grid-cols-[605px_1fr] items-center gap-10 lg:gap-[77px]">
                     {/* left image */}
                     <div>
                         <Image
@@ -53,7 +53,7 @@ export default function Deliverables() {
                     </div>
 
                     {/* right content */}
-                    <div className="max-w-[705px] space-y-6">
+                    <div className="max-w-[705px] space-y-4 lg:space-y-6">
                         <div>
                             <Heading className="2xl:text-[42px]">
                                 Deliverables
@@ -68,7 +68,7 @@ export default function Deliverables() {
                             {defaultItems.map((item) => (
                                 <li
                                     key={item.title}
-                                    className="space-y-[10px] py-5"
+                                    className="space-y-[8px] lg:space-y-[10px] py-3 lg:py-5"
                                 >
                                     <SubHeading>{item.title}</SubHeading>
                                     <Paragraph className="2xl:text-xl">

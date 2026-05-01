@@ -7,7 +7,6 @@ import { cn } from "@/lib/cn";
 
 interface GradientCardProps extends ServicesDataProps {
     className?: string;
-    imgClassName?: string;
 }
 
 export default function GradientCard({
@@ -16,13 +15,12 @@ export default function GradientCard({
     src,
     alt,
     className = "",
-    imgClassName = "",
 }: GradientCardProps) {
     return (
         <article>
             <div
                 className={cn(
-                    "w-full min-w-[333px] min-h-[361px] rounded-[14px] rounded-[14px] px-[25px] pt-[20px] pb-[60px] bg-linear-to-b from-card-gradient-start to-card-gradient-end overflow-hidden",
+                    "w-full max-w-[333px]  md:max-w-full min-h-[361px] rounded-[14px] rounded-[5px] px-[25px] pt-[20px] md:pb-[60px] bg-linear-to-b from-card-gradient-start to-card-gradient-end overflow-hidden",
                     className,
                 )}
             >
@@ -31,7 +29,7 @@ export default function GradientCard({
                         <Image src={src} alt={alt} />
                     </div>
 
-                    <div className="space-y-5 mt-[34px] max-w-[308px]">
+                    <div className="space-y-3 md:space-y-5 mt-[34px] max-w-[308px]">
                         <SubHeading className="whitespace-pre-line">
                             {title}
                         </SubHeading>

@@ -6,16 +6,10 @@ import systemDeployment from "@/public/images/case-study-imgs/case-study-five.pn
 import industryImpact from "@/public/images/case-study-imgs/case-study-six.png";
 import { StaticImageData } from "next/image";
 
-export type CaseStudyBlock =
-    | { type: "paragraph"; text: string }
-    | { type: "bullets"; items: string[] }
-    | { type: "image"; src: string; alt: string; aspectClass?: string };
-
 export type CaseStudySection = {
     id: string;
     label: string;
     heading?: string;
-    blocks: CaseStudyBlock[];
 };
 
 export type CaseStudyItem = {

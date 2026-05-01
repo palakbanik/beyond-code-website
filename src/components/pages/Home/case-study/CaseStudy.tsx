@@ -10,11 +10,11 @@ import { CaseStudyCard } from "@/components/shared/CaseStudyCard";
 export default function CaseStudy() {
     return (
         <section>
-            <Container>
+            <Container className="pt-13.75 2xl:pt-27.5">
                 <div className="space-y-[50px]">
                     {/* heading */}
-                    <div className="flex items-center justify-between">
-                        <div className="space-y-[30px]">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                        <div className="space-y-[15px] md:space-y-[30px]">
                             <Heading className="2xl:text-[42px]">
                                 Pilot Program / Case Study
                             </Heading>

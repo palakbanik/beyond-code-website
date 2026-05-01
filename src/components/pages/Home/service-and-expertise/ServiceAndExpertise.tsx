@@ -10,7 +10,7 @@ export default function ServiceAndExpertise() {
     return (
         <section>
             <Container>
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <Heading>Service & Expertise</Heading>
 
                     <Button variant="white" icon={<FiArrowRight />}>

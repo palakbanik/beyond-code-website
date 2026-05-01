@@ -1,10 +1,9 @@
+import React from "react";
 import Container from "@/components/shared/Container";
 import GradientCard from "@/components/shared/GradientCard";
 import Heading from "@/components/shared/Heading";
 import Paragraph from "@/components/shared/Paragraph";
 import Button from "@/components/ui/Button";
-import { servicesData } from "@/data/services-and-expertise";
-import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 import stepOne from "@/public/number-one-icon.svg";
@@ -50,8 +49,8 @@ export default function ImplementationProcess() {
         <section>
             <Container className="py-6 md:py-9 xl:py-13.75 2xl:py-27.5">
                 <div className="space-y-[50px]">
-                    <div className="flex items-center justify-between">
-                        <div>
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                        <div >
                             <Heading>Implementation Process</Heading>
                             <Paragraph className="2xl:text-xl">
                                 Beyond Code follows a 4-stage deployment

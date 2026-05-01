@@ -28,10 +28,10 @@ const deploymentModalsData: DeliverableItem[] = [
 export default function DeploymentModals() {
     return (
         <section aria-label="Deliverables section">
-            <Container className="pb-6 md:pb-9 xl:pb-13.75 2xl:pb-27.5">
-                <div className="grid lg:grid-cols-[740px_1fr] place-items-center gap-[77px]">
+            <Container className="pb-14 2xl:pb-27.5">
+                <div className="grid lg:grid-cols-[740px_1fr] place-items-center gap-10 lg:gap-[77px]">
                     {/* left content */}
-                    <div className="max-w-[740px] space-y-6">
+                    <div className="max-w-[740px] space-y-3 md:space-y-6">
                         <Heading className="2xl:text-[42px]">
                             Deployment Models
                         </Heading>
@@ -40,7 +40,7 @@ export default function DeploymentModals() {
                             {deploymentModalsData.map((item) => (
                                 <li
                                     key={item.title}
-                                    className="space-y-[10px] py-5"
+                                    className="space-y-[8px] lg:space-y-[10px] py-3 lg:py-5"
                                 >
                                     <SubHeading>{item.title}</SubHeading>
                                     <Paragraph className="2xl:text-xl">
